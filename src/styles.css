@@ -15,6 +15,7 @@ body {
 section {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 header {
@@ -69,6 +70,44 @@ header a {
   margin-top: 32px;
 }
 
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.section-intro .image-canel {
+  max-width: 100%;
+}
+
+.section-intro h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  color: var(--secondary-color);
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.section-intro h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.25;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+.section-intro p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--secondary-color);
+  opacity: 0.7;
+}
+
 footer {
   color: var(--primary-color);
   background-image: linear-gradient(
@@ -79,10 +118,13 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 40%;
-  padding: 100px 0;
 }
 .grid {
   display: grid;
+  grid-gap: 64px;
+}
+
+.grid-3-columns-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
@@ -119,10 +161,13 @@ footer p {
   line-height: 24px;
   color: var(--primary-color);
   opacity: 0.7;
-  margin-right: 20px;
 }
 
 @media (max-width: 900px) {
+  section {
+    padding: 30px;
+  }
+
   header {
     padding: 70px 0;
   }
@@ -137,5 +182,12 @@ footer p {
   }
   header a {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  .img-responsive {
+    max-width: 100%;
   }
 }
