@@ -74,6 +74,23 @@ header a {
   grid-template-columns: 1fr 1fr;
 }
 
+.card-header.grid {
+  grid-gap: 0;
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
+.aspect-ratio-1-1 {
+  aspect-ratio: 1/1;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
 .section-intro .image-canel {
   max-width: 100%;
 }
@@ -176,10 +193,6 @@ footer {
   margin: 50px;
 }
 
-.section-cards img {
-  max-width: 185px;
-}
-
 .grid-3-columns-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
@@ -244,6 +257,9 @@ footer p {
     grid-gap: 32px;
   }
   .img-responsive {
-    max-width: 100%;
+    width: 100%;
+  }
+  .card-header img {
+    display: none;
   }
 }
